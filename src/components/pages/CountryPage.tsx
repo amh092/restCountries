@@ -13,7 +13,7 @@ const CountryPage : React.FC <{textColor: string, backgroundColor:string }> = (p
     
 
      const [country, setCountry] = 
-     useState<{flags?:any; ccid:string, languages:any ; currencies?:any; borders:any[]; tld?:string; name?:any ;population?:number;region?:string; capital?:string ,subregion?:string; }>();
+     useState<{flags?:any;  languages:any ; currencies?:any; borders:any[]; tld?:string; name?:any ;population?:number;region?:string; capital?:string ,subregion?:string; }>();
 
     const getCountryByName = async() => {
         const res = await fetch(`https://restcountries.com/v3.1/name/${countryParam}?fullText=true`)
@@ -47,7 +47,7 @@ const CountryPage : React.FC <{textColor: string, backgroundColor:string }> = (p
         capital={country?.capital} 
         subRegion={country?.subregion} 
         population={country?.population} 
-        nativeName={country?.name.nativeName.official}
+       
         borders= {country?.borders  ===  undefined ? 
          (<h1 className={`${props.textColor}`}>no borders</h1>):(country?.borders.map((country)=>
             <li className={`${props.textColor} ${props.backgroundColor} shadow-md w-[50px] h-[28px] m-4` }
