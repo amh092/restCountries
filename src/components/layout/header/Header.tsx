@@ -5,7 +5,7 @@ import ModeSwitcher from './ModeSwitcher'
 const Header : React.FC <{name :string; displayMode:string ;changMode:any ;headerStyle:string; textStyle:string}>=  (props) => {
     // everything should be wrapped with hooks 
     const [displayMode, setDisplayMode] = useState("Light");
-    const [backgroundColor, setBackgroundColor] = useState("bg-black");
+    const [backgroundColor, setBackgroundColor] = useState("");
    
   
     

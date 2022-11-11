@@ -54,7 +54,7 @@ const Countries :React.FC <{searchInputBackgroundColor:string ; dropDownBackgrou
         else if(searchMode === "by country") {
         getCountryByName(country.trim())}
      }
-     , [region,country,searchMode]);
+     , []);
      
    return (
 
