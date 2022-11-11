@@ -1,15 +1,14 @@
-import React,{useState,useEffect} from 'react';
+import React,{useState} from 'react';
 import Header from "./components/layout/header/Header"
 import './App.css';
 import Countries from './components/countries/Countries';
-import { text } from 'body-parser';
+
 import { Route, Routes } from 'react-router';
 import CountryPage from './components/pages/CountryPage';
-import { NavLink } from 'react-router-dom';
+
 
 function App() {
   const [displayMode, setDisplayMode] = useState("Light");
-  const [backgroundColor, setBackgroundColor] = useState('');
   const [textColor, setTextColor] = useState("text-black");
   const [headerColor, setHeaderColor] = useState('bg-[#fff]')
   
@@ -32,9 +31,7 @@ function App() {
     
       
   }
-  const goBack = () =>{
-    
-  }
+ 
   return (
     <div className="App">
       <Header headerStyle={`${headerColor} drop-shadow-md`} textStyle={textColor} name={'ahmed'} changMode={setModeHandler} displayMode={displayMode}/>

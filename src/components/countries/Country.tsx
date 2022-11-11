@@ -1,5 +1,6 @@
 import React from 'react'
-import { NavLink} from 'react-router-dom'
+import { NavLink,useNavigate} from 'react-router-dom'
+
 
 
 const Country : React.FC <{ countryName: string, countryFlag:string, countryRegion:string, population:number; capital:string; textColorForCountry:string ; countryBackgroundColor?:string ;subRegion?:string}> = (props) => {

@@ -9,7 +9,7 @@ const FullCountry : React.FC <{ languages?:any; borders?:any; children?:any; nat
        
        
 
-            <div className={` flex xl:flex-row xl:w-[1440px] flex-col justify-around   w-[308px] h-[336px] mx-auto my-8 text-left rounded-b-md drop-shadow-md`}>
+            <div className={` flex xl:flex-row xl:w-[1440px] flex-col justify-around   w-[308px] h-[336px] mx-auto xl:my-8 my-80 text-left rounded-b-md drop-shadow-md`}>
                 <img className={'rounded-t-md h-[229px] w-[308px]'}  src={props.countryFlag} alt=""/>
                <div className={`px-4 ${props.countryBackgroundColor} xl:bg-transparent	 rounded-b-md p-2`}>
                 <h1 className={`font-bold text-left ${props.textColorForCountry}`}>{props.countryName}</h1>
