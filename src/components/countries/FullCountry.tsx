@@ -1,5 +1,5 @@
-import React,{useState,useEffect} from 'react'
-import {Link,Route, Navigate, NavLink} from 'react-router-dom'
+import React from 'react'
+
 
 
 const FullCountry : React.FC <{ languages?:any; borders?:any; children?:any; nativeName?:string; countryName?: string, countryFlag?:string,topLevelDomain?:string; currencies?:string[]; countryRegion?:string, population?:number; capital?:string; textColorForCountry?:string ; countryBackgroundColor?:string ;subRegion?:string ;}> = (props) => {

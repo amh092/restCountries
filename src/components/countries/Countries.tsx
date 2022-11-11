@@ -1,4 +1,4 @@
-import React,{useState,useEffect,useRef, HTMLInputTypeAttribute} from 'react'
+import React,{useState,useEffect} from 'react'
 import Country from './Country'
 import { v4 as uuidv4 } from 'uuid';
 const Countries :React.FC <{searchInputBackgroundColor:string ; dropDownBackgroundColor:string; textColorForCountry:string; countryBackgroundColor:string}> =(props) => {
@@ -46,15 +46,15 @@ const Countries :React.FC <{searchInputBackgroundColor:string ; dropDownBackgrou
      }
     
      useEffect(() => {
-         if(searchMode == 'all countries'){
-        getAllCountries();}
-        else if(searchMode == "by region") {
+         if(searchMode === 'all countries'){
+        getAllCountries()}
+        else if(searchMode === "by region") {
         getCountriesByRegion()}
      
-        else if(searchMode == "by country") {
+        else if(searchMode === "by country") {
         getCountryByName(country.trim())}
      }
-     , [region,country]);
+     , [region,country,searchMode]);
      
    return (
 
